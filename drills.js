@@ -33,10 +33,8 @@ function accessLastItem(array){
 
 
 
+
 //PART 2
-
-
-//PART 3
 // Redo the "max and min (without sort or Math.max/min)" drill but this time use a while loop instead of a for loop
 // Redo "Compute the average" exercise but use the Array.forEach() method instead of a for loop
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
@@ -65,12 +63,11 @@ function min(array){
 }
 
 function arrAvg(array){
-  let avgSum=0;
-  array.forEach(x=>avgSum+=x);
-  return avgSum/array.length;
-
+  return array.reduce((total,toAdd)=>total+toAdd)/array.length;
 
 }
+console.log(arrAvg([1,2,3,4,5]));
+
 
 function fizzBuzz(num){
   let answerStr =''
@@ -86,12 +83,6 @@ function fizzBuzz(num){
   return answerStr;
 }
 
-// var func2 = function( .. ) {
-//   return condition1 ? value1
-//        : condition2 ? value2
-//        : condition3 ? value3
-//        :              value4
-// }
 
 
 // ALL FUNCTION CALLS
@@ -107,7 +98,7 @@ function fizzBuzz(num){
 //part 3
 // console.log(max([2,3,4,4344134,5,6,23]));
 // console.log(min([2,3,-24,4,4344134,5,6,23]));
-console.log(arrAvg([1,2,3,4,5]));
+//console.log(arrAvg([1,2,3,4,5]));
 // console.log(fizzBuzz(16));
 
 
