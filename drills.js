@@ -64,9 +64,8 @@ function min(array){
 
 function arrAvg(array){
   return array.reduce((total,toAdd)=>total+toAdd)/array.length;
-
 }
-console.log(arrAvg([1,2,3,4,5]));
+
 
 
 function fizzBuzz(num){
@@ -88,14 +87,9 @@ function fizzBuzz(num){
 // ALL FUNCTION CALLS
 // console.log(makeList(1,2,3));
 // console.log(addToList([1,2,3],4));
-
 // console.log(accessFirstItem([1,2,3]));
 // console.log(accessThirdItem([1,2,3]));
-
-
 // console.log(accessLastItem([1,3,2,5,6,1,6,1,333]));
-
-//part 3
 // console.log(max([2,3,4,4344134,5,6,23]));
 // console.log(min([2,3,-24,4,4344134,5,6,23]));
 //console.log(arrAvg([1,2,3,4,5]));
