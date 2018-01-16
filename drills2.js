@@ -64,16 +64,16 @@ const lavaWarning = hazardWarningCreator('Lava on road');
 // lavaWarning('Garnett ave.')
 
 let turtleMovements =[[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]]
-// console.log(turtleMovements);
 
 function turtleMove(arr){
   let totalSteps =  arr.filter(x=>x[0]>=0&&x[1]>=0).map(x=>x[0]+x[1]);
   totalSteps.forEach(x=>console.log(`Turtle moved ${x} steps this time.`))
 }
 //turtleMove(turtleMovements)
-//try to acount for total movements, later.
+//try to acount for total movements, later.//
 
 let codeString = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest'
+
 function reduceDecoder(str){
   let rawString = str.split(" ");
   let ansString=rawString.reduce(function(currentString,words){ 
